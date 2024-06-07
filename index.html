@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <img src="assets/Frame.png" alt="Frame" class="navbar-brand-image"> <!-- Image added here -->
-        <a class="navbar-brand" href="#">uODentists</a>
+        <a class="navbar-brand" href="#home">uODentists</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,8 +27,8 @@
                 <a class="nav-link" href="#servicesAndImage">Services</a>
                 <a class="nav-link" href="#history">About</a>
                 <a class="nav-link" href="#dentists">Dentists</a>
-                <a class="nav-link" href="#">Contact</a>
-                <a class="nav-link btn btn-primary text-white" href="#" style="background-color: rgb(80, 171, 246);">Book Appointment</a>
+                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link btn btn-primary text-white" href="#appointmentPage" style="background-color: rgb(80, 171, 246);">Book Appointment</a>
             </div>
         </div>
     </nav>
@@ -39,8 +39,8 @@
             <h1 class="helloHeader">We Provide High Quality Dental Services For uOttawa Students</h1>
             <h2 class="addressHeader">613-265-4241 | 101 King Edward, Ottawa</h2>
             <div class="buttonsFirstPage">
-                <a class="nav-link btn btn-primary text-white" href="#" style="background-color: rgb(80, 171, 246);">Get Started</a>
-                <a class="nav-link btn btn-primary text-black" href="#" style="background-color: #FFF;">Learn More</a>
+                <a class="nav-link btn btn-primary text-white" href="#howToGetService" style="background-color: rgb(80, 171, 246);">Get Started</a>
+                <a class="nav-link btn btn-primary text-black" href="#history" style="background-color: #FFF;">Learn More</a>
             </div>
             
         </div>
@@ -48,7 +48,7 @@
         <img src="assets/Illustration.png" alt="Dental Illustration" class="illustration-image"> <!-- Image added here -->
     </div>
 
-    <div class="page2">
+    <div class="page2" id="howToGetService">
         <h1>How To Get Our Service</h1>
         <h3>Just follow these simple steps!</h3>
     </div>
@@ -108,25 +108,25 @@
             <img src="assets/Doctor01.png" alt="Doctor 01" class="doctorImage">
             <h3>Dr. Ahmad Sobh</h3>
             <p>Orthodontist</p>
-            <a class="nav-link btn btn-primary text-white" href="#" style="background-color: rgb(80, 171, 246);">Book Appointment</a>
+            <a class="nav-link btn btn-primary text-white" href="#appointmentPage" style="background-color: rgb(80, 171, 246);">Book Appointment</a>
         </div>
         <div class="doctorBox">
             <img src="assets/Doctor02.png" alt="Doctor 02" class="doctorImage">
             <h3>Dr. Pamir Habib</h3>
             <p>Cosmetic Dentist</p>
-            <a class="nav-link btn btn-primary text-white" href="#" style="background-color: rgb(80, 171, 246);">Book Appointment</a>
+            <a class="nav-link btn btn-primary text-white" href="#appointmentPage" style="background-color: rgb(80, 171, 246);">Book Appointment</a>
         </div>
         <div class="doctorBox">
             <img src="assets/Doctor03.png" alt="Doctor 03" class="doctorImage">
             <h3>Dr. Abdu Barkhad</h3>
             <p>Pediatric Dentist</p>
-            <a class="nav-link btn btn-primary text-white" href="#" style="background-color: rgb(80, 171, 246);">Book Appointment</a>
+            <a class="nav-link btn btn-primary text-white" href="#appointmentPage" style="background-color: rgb(80, 171, 246);">Book Appointment</a>
         </div>
         <div class="doctorBox">
             <img src="assets/Doctor04.png" alt="Doctor 04" class="doctorImage">
             <h3>Dr. Tausif Islam</h3>
             <p>Oral Surgeon</p>
-            <a class="nav-link btn btn-primary text-white" href="#" style="background-color: rgb(80, 171, 246);">Book Appointment</a>
+            <a class="nav-link btn btn-primary text-white" href="#appointmentPage" style="background-color: rgb(80, 171, 246);">Book Appointment</a>
         </div>
     </div>
     
@@ -160,6 +160,7 @@
     
                 <label for="serviceType">Type of Service:</label>
                 <select id="serviceType" name="serviceType">
+                    <option value="empty"></option>
                     <option value="general">Check ups - $200</option>
                     <option value="orthodontics">Emergencies - $500</option>
                     <option value="cosmetic">Cosmetic dentistry - $900</option>
@@ -178,8 +179,26 @@
             </form>
         </div>
     </div>
+
+    <div class="page3" id="contact">
+        <div class="contactLayout">
+            <div class="mapContainer">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4058.5947561337885!2d-75.68390996277657!3d45.42365869204512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1717783982807!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contactInfo">
+                <h2>Our Information</h2>
+                <p><strong>Email:</strong> info@uODentists.com</p>
+                <p><strong>Address:</strong> 101 King Edward Drive, uOttawa</p>
+                <p><strong>Business Hours:</strong></p>
+                <p>Monday - Friday: 10 am - 9 pm</p>
+                <p>Saturday - Sunday: 8 am - 5 pm</p>  
+            </div>
+        </div>
+    </div>
     
-    
+    <div class="privacy-policy">
+       <p>© 2024, All Rights Reserved</p>
+    </div>
     
 
     
