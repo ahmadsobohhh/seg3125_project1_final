@@ -2,6 +2,11 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 .helloHeader {
     width: 600px;
     margin-left: 100px;
@@ -135,8 +140,8 @@
 .page2 h1 {
     color: white;
     font-weight: bold;
-    margin-top: 50px;
-    margin-left: 60px;
+    margin-top: 20px;
+    margin-left: 40px;
     padding-top: 100px;
     text-align: center;
 
@@ -215,4 +220,47 @@
     max-width: 50%; /* Ensures the image does not exceed half of the container's width */
     border-radius: 10px; /* Optionally rounds the corners of the image */
     margin-left: 20px;
+}
+
+.historySection {
+    display: flex;
+    align-items: center; /* Aligns the content vertically */
+    background-color: #fff; /* Dark grey background for the whole section */
+    padding: 20px; /* Padding around the content within the section */
+    margin: 20px 80px; /* Margin around the section */
+    border-radius: 10px; /* Rounds the corners of the text box */
+
+}
+
+.historyImage {
+    flex: 1; /* Allows the image to take up half of the container */
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* Restricts the image width */
+    margin-right: 20px; /* Space between the image and the text */
+}
+
+.historyContent {
+    flex: 2; /* Allows the text content to take up the remaining space */
+    padding: 20px;
+    background-color: #ccc; /* Light grey background for the text content */
+    border-radius: 10px; /* Rounds the corners of the text box */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds shadow for depth */
+    border-radius: 10px; /* Rounds the corners of the text box */
+    margin-top: 30px; /* Space below the header */
+
+}
+
+.historyContent h2 {
+    color: #222; /* Dark text color for the header */
+    margin-bottom: 10px; /* Space below the header */
+    border-radius: 10px; /* Rounds the corners of the text box */
+
+}
+
+.historyContent p {
+    color: #222; /* Dark text color for the paragraph */
+    line-height: 1.6; /* Improves readability of the paragraph */
+    border-radius: 10px; /* Rounds the corners of the text box */
+
 }
