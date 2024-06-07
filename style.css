@@ -473,3 +473,43 @@ html {
     padding-top: 10px;
     color: white;
 }
+
+
+.emailTemplate {
+    font-family: Ubunuti, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.emailTemplate h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.emailTemplate p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.emailTemplate p strong {
+    color: #555;
+}
+
+.emailTemplate p span {
+    color: #000;
+}
+
+.footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+    color: #777;
+    text-align: center;
+}

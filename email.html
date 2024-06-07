@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Booking Confirmation</title>
+</head>
+<body class="page3">
+    <div class="page3">
+        <h1>Booking Confirmation</h1>
+        <p><strong>Name:</strong> <span id="confirmName"></span></p>
+        <p><strong>Date:</strong> <span id="confirmDate"></span></p>
+        <p><strong>Service:</strong> <span id="confirmService"></span></p>
+        <p><strong>Email:</strong> <span id="confirmEmail"></span></p>
+        <p><strong>Phone:</strong> <span id="confirmPhone"></span></p>
+        <p><strong>Additional Info:</strong> <span id="confirmInfo"></span></p>
+    </div>
+
+    <div class="btn"> 
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <script>
+        window.onload = function() {
+            const appointmentData = JSON.parse(localStorage.getItem('appointmentData'));
+            if (appointmentData) {
+                document.getElementById('confirmName').textContent = appointmentData.firstName + ' ' + appointmentData.lastName;
+                document.getElementById('confirmDate').textContent = appointmentData.appointmentDate;
+                document.getElementById('confirmService').textContent = appointmentData.serviceType;
+                document.getElementById('confirmEmail').textContent = appointmentData.email;
+                document.getElementById('confirmPhone').textContent = appointmentData.phoneNumber;
+                document.getElementById('confirmInfo').textContent = appointmentData.additionalInfo;
+            } else {
+                document.body.innerHTML = '<h1>Booking information could not be found. Please try submitting the form again.</h1>';
+            }
+        };
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

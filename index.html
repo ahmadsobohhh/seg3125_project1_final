@@ -141,7 +141,7 @@
     <div class="page4" id="appointmentPage">
         <div class="appointmentLayout">
             <img src="assets/SmilingDentist.png" alt="Appointment Setting" class="appointmentImage">
-            <form class="appointmentForm">
+            <form class="appointmentForm" action="email.html" method="POST">
                 <h2>Make An Appointment</h2>
                 <label for="firstName">First Name:</label>
                 <input type="text" id="firstName" name="firstName" required>
@@ -153,22 +153,21 @@
                 <input type="date" id="appointmentDate" name="appointmentDate" required>
 
                 <label for="phoneNumber">Phone Number:</label>
-                <input type="phoneNumber" id="number" name="number" required>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
     
                 <label for="serviceType">Type of Service:</label>
                 <select id="serviceType" name="serviceType">
-                    <option value="empty"></option>
                     <option value="general">Check ups - $200</option>
-                    <option value="orthodontics">Emergencies - $500</option>
+                    <option value="emergencies">Emergencies - $500</option>
                     <option value="cosmetic">Cosmetic dentistry - $900</option>
-                    <option value="cosmetic">Dental implants - $5000</option>
-                    <option value="cosmetic">Orthodontics - $5000</option>
-                    <option value="cosmetic">Children’s dentistry - $200</option>
-                    <option value="cosmetic">Preventative checks - $150</option>
-                    <option value="cosmetic">FREE Telephone consultations</option>
+                    <option value="implants">Dental implants - $5000</option>
+                    <option value="orthodontics">Orthodontics - $5000</option>
+                    <option value="children">Children’s dentistry - $200</option>
+                    <option value="preventative">Preventative checks - $150</option>
+                    <option value="consultation">FREE Telephone consultations</option>
                     <option value="other">Other</option>
                 </select>
     
@@ -200,6 +199,29 @@
        <p>© 2024, All Rights Reserved</p>
     </div>
     
+
+    <script>
+        document.querySelector('.appointmentForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent the default form submission
+
+            // Gather form data into an object
+            const formData = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                appointmentDate: document.getElementById('appointmentDate').value,
+                phoneNumber: document.getElementById('phoneNumber').value,
+                email: document.getElementById('email').value,
+                serviceType: document.getElementById('serviceType').value,
+                additionalInfo: document.getElementById('additionalInfo').value
+            };
+
+            // Store the data in localStorage
+            localStorage.setItem('appointmentData', JSON.stringify(formData));
+
+            // Redirect to email.html
+            window.location.href = 'email.html';
+        });
+    </script>
 
     
 </body>
