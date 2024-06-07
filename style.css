@@ -57,7 +57,7 @@ html {
 
 /* Navbar button styling */
 .nav-link.btn {
-    background-color: rgb(112,190,249);; /* Specific color for the button */
+    background-color: rgb(80, 171, 246); /* Specific color for the button */
     border-color: white; /* White border for the button */
 }
 
@@ -87,7 +87,7 @@ html {
 .btn {
     padding: 10px 20px; /* Padding around text */
     font-size: 16px; /* Font size */
-    background-color: rgb(112,190,249);; /* Background color */
+    background-color: rgb(80, 171, 246); /* Background color */
     border: none; /* No borders */
     border-radius: 20px; /* Rounded edges */
     cursor: pointer; /* Pointer cursor on hover */
@@ -98,7 +98,7 @@ html {
 .btn-custom-light {
     background-color: white; /* Background color for light button */
     color: rgb(112,190,249);; /* Text color */
-    border: 1px solid rgb(112,190,249);; /* Ensures border is visible */
+    border: 1px solid rgb(80, 171, 246); /* Ensures border is visible */
 }
 
 /* Hover effects */
@@ -107,7 +107,7 @@ html {
 }
 
 .btn-custom-light:hover {
-    background-color: rgb(112,190,249);; /* Change to blue on hover */
+    background-color: rgb(80, 171, 246);
     color: grey; /* Text color changes to white */
 }
 
@@ -134,15 +134,14 @@ html {
 }
 
 .page2{
-    background-color: rgb(112,190,249);
+    background-color: rgb(80, 171, 246);
 }
 
 .page2 h1 {
     color: white;
     font-weight: bold;
-    margin-top: 20px;
     margin-left: 40px;
-    padding-top: 100px;
+    padding-top: 40px;
     text-align: center;
 
 }
@@ -151,7 +150,7 @@ html {
     color: white;
     text-align: center;
     margin-top: 30px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
 
 .serviceSteps {
@@ -263,4 +262,152 @@ html {
     line-height: 1.6; /* Improves readability of the paragraph */
     border-radius: 10px; /* Rounds the corners of the text box */
 
+}
+
+.doctorsSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 80px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light grey background */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.doctorBox {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    margin: 0 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.doctorImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.doctorBox h3 {
+    color: #333;
+    margin: 10px 0 5px 0;
+}
+
+.doctorBox p {
+    color: #777;
+    margin: 0;
+}
+
+.page3 {
+    background-color: rgb(80, 171, 246);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.page3 h1 {
+    font-weight: bold;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.ahmadDentistExplanation {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: space-between; /* Distributes space between and around content items */
+    text-align: left;
+}
+
+.ahmadDentistExplanation p {
+    flex: 1; /* Allows text to fill available space */
+    margin-right: 20px; /* Ensures spacing between text and image */
+    background-color: #fff; /* Provides a contrasting background for text */
+    color: #000; /* Sets text color */
+    padding: 10px; /* Provides padding around the text */
+    border-radius: 10px; /* Optional: rounds corners of the text block */
+    border: 3px #000;
+}
+
+.ahmadDentistImage {
+    max-width: 500px; /* Adjust this value to increase the image size */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 10px; /* Keeps the corners rounded */
+}
+
+#appointmentPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;  /* Ensures the div takes at least the height of the viewport */
+    padding: 20px;
+}
+
+.appointmentLayout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 80%; /* Adjusts based on preference */
+    max-width: 1200px; /* Maximum width */
+}
+
+.appointmentImage {
+    width: 50%;
+    height: auto;
+    margin-right: 20px; /* Space between image and form */
+}
+
+.appointmentForm {
+    width: 50%;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Adds subtle shadow around the form */
+}
+
+.appointmentForm h2 {
+    margin-bottom: 20px;
+}
+
+.appointmentForm label {
+    display: block;
+    margin-top: 10px;
+}
+
+.appointmentForm input[type="text"],
+.appointmentForm input[type="date"],
+.appointmentForm select,
+.appointmentForm textarea {
+    width: 100%; /* Full width of the form */
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box; /* Includes padding in width */
+}
+
+.appointmentForm button {
+    background-color: rgb(112,190,249); /* Matching theme color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.appointmentForm button:hover {
+    background-color: rgb(80,160,220); /* Darker on hover */
+}
+
+@media (max-width: 768px) {
+    .appointmentLayout {
+        flex-direction: column;
+    }
+    .appointmentImage, .appointmentForm {
+        width: 100%;
+    }
+    .appointmentImage {
+        margin-bottom: 20px; /* Adds space between the image and form on small screens */
+    }
 }

@@ -28,7 +28,7 @@
                 <a class="nav-link" href="#history">About</a>
                 <a class="nav-link" href="#dentists">Dentists</a>
                 <a class="nav-link" href="#">Contact</a>
-                <a class="nav-link btn btn-primary text-white" href="#" style="background-color: rgb(112,190,249);">Book Appointment</a>
+                <a class="nav-link btn btn-primary text-white" href="#" style="background-color: rgb(80, 171, 246);">Book Appointment</a>
             </div>
         </div>
     </nav>
@@ -39,7 +39,7 @@
             <h1 class="helloHeader">We Provide High Quality Dental Services For uOttawa Students</h1>
             <h2 class="addressHeader">613-265-4241 | 101 King Edward, Ottawa</h2>
             <div class="buttonsFirstPage">
-                <a class="nav-link btn btn-primary text-white" href="#" style="background-color: rgb(112,190,249);;">Get Started</a>
+                <a class="nav-link btn btn-primary text-white" href="#" style="background-color: rgb(80, 171, 246);">Get Started</a>
                 <a class="nav-link btn btn-primary text-black" href="#" style="background-color: #FFF;">Learn More</a>
             </div>
             
@@ -102,6 +102,85 @@
         <h1>Meet Our Dentists!</h1>
         <h3>All of them are uOttawa Alumni!</h3>
     </div>
+
+    <div class="doctorsSection">
+        <div class="doctorBox">
+            <img src="assets/Doctor01.png" alt="Doctor 01" class="doctorImage">
+            <h3>Dr. Ahmad Sobh</h3>
+            <p>Orthodontist</p>
+            <a class="nav-link btn btn-primary text-white" href="#" style="background-color: rgb(80, 171, 246);">Book Appointment</a>
+        </div>
+        <div class="doctorBox">
+            <img src="assets/Doctor02.png" alt="Doctor 02" class="doctorImage">
+            <h3>Dr. Pamir Habib</h3>
+            <p>Cosmetic Dentist</p>
+            <a class="nav-link btn btn-primary text-white" href="#" style="background-color: rgb(80, 171, 246);">Book Appointment</a>
+        </div>
+        <div class="doctorBox">
+            <img src="assets/Doctor03.png" alt="Doctor 03" class="doctorImage">
+            <h3>Dr. Abdu Barkhad</h3>
+            <p>Pediatric Dentist</p>
+            <a class="nav-link btn btn-primary text-white" href="#" style="background-color: rgb(80, 171, 246);">Book Appointment</a>
+        </div>
+        <div class="doctorBox">
+            <img src="assets/Doctor04.png" alt="Doctor 04" class="doctorImage">
+            <h3>Dr. Tausif Islam</h3>
+            <p>Oral Surgeon</p>
+            <a class="nav-link btn btn-primary text-white" href="#" style="background-color: rgb(80, 171, 246);">Book Appointment</a>
+        </div>
+    </div>
+    
+    <div class="page3" id="whatOurClientSaysAboutUs">
+        <h1>What Our Client Says About Us!</h1>
+        <div class="ahmadDentistExplanation">
+            <p>"One of the best dentists I’ve had the pleasure of going to. Dr. Soboh took care of all my needs and ensured my teeth were healthy and I was comfortable throughout the entire appointment. His attention to detail and gentle approach made a usually stressful experience very relaxing. Thank you so much, uODentists! The staff was also incredibly welcoming and professional, making sure I felt informed and at ease from the moment I walked in. I’m excited to come here again and have already recommended Dr. Soboh to several of my friends and family!"</p>
+            <img src="assets/AhmadDentist.png" alt="AhmadDentist" class="ahmadDentistImage">
+        </div>
+    </div>
+    
+    <div class="page4" id="appointmentPage">
+        <div class="appointmentLayout">
+            <img src="assets/SmilingDentist.png" alt="Appointment Setting" class="appointmentImage">
+            <form class="appointmentForm">
+                <h2>Make An Appointment</h2>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+    
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+    
+                <label for="appointmentDate">Choose a date: </label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="phoneNumber" id="number" name="number" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="serviceType">Type of Service:</label>
+                <select id="serviceType" name="serviceType">
+                    <option value="general">Check ups - $200</option>
+                    <option value="orthodontics">Emergencies - $500</option>
+                    <option value="cosmetic">Cosmetic dentistry - $900</option>
+                    <option value="cosmetic">Dental implants - $5000</option>
+                    <option value="cosmetic">Orthodontics - $5000</option>
+                    <option value="cosmetic">Children’s dentistry - $200</option>
+                    <option value="cosmetic">Preventative checks - $150</option>
+                    <option value="cosmetic">FREE Telephone consultations</option>
+                    <option value="other">Other</option>
+                </select>
+    
+                <label for="additionalInfo">Additional Information:</label>
+                <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Describe your needs..."></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    
+    
 
     
 </body>
